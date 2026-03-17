@@ -29,7 +29,7 @@ public class Primo{
         }
 
         if (esPrimo ){
-            System.out.println("El numero es primo");
+            System.out.println("Numero primo");//mensaje cambiado 
         }else{
             System.out.println("El numero no es primo");
         }
