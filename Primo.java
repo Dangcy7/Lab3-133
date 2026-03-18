@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Primo {
+
     // Algoritmo optimizado con raíz cuadrada
     public static boolean esPrimo(int n) {
         if (n < 2) return false;
@@ -14,13 +15,16 @@ public class Primo {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Ingresa un número: ");
         int numero = sc.nextInt();
+
         if (esPrimo(numero)) {
             System.out.println(numero + " ES primo.");
         } else {
             System.out.println(numero + " NO es primo.");
         }
+
         sc.close();
     }
 }
