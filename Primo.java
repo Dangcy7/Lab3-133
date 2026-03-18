@@ -1,40 +1,30 @@
 import java.util.Scanner;
 
+public class Primo {
 
-
-public class Primo{
-    public static void main(String[]args){
-
-        Scanner sc=new Scanner(System.in);
-
-        System.out.println("Introduzca un numero para verificar si es primo: ");
-
-        int primo=sc.nextInt();
-
-        boolean esPrimo=true;
-
-        if (primo==1 ){
-            esPrimo=false;
-        }else{
-            for(int i=2; i <= primo / 2;i++){
-
-                if (primo % i == 0){
-
-                    esPrimo=false;
-
-                    break;
-                }
-
-            }
+    // Algoritmo optimizado con raíz cuadrada
+    public static boolean esPrimo(int n) {
+        if (n < 2) return false;
+        if (n == 2) return true;
+        if (n % 2 == 0) return false;
+        for (int i = 3; i <= Math.sqrt(n); i += 2) {
+            if (n % i == 0) return false;
         }
-
-        if (esPrimo ){
-            System.out.println("Numero primo");//mensaje cambiado 
-        }else{
-            System.out.println("El numero no es primo");
-        }
-        
+        return true;
     }
-    
-}
 
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Ingresa un número: ");
+        int numero = sc.nextInt();
+
+        if (esPrimo(numero)) {
+            System.out.println(numero + " ES primo.");
+        } else {
+            System.out.println(numero + " NO es primo.");
+        }
+
+        sc.close();
+    }
+}

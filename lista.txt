@@ -1,3 +1,9 @@
 Lista
+<<<<<<< HEAD
 -Tenorio Alanoca Ivan Rodrigo
 -Daniel Gustavo Choque Yaniquez
+=======
+-Daniel Gustavo Choque Yaniquez
+-Renzo Sandro Lia Cortez
+-Desarrollador 3
+>>>>>>> dd2b5a5a4f6238fb8cf3373754fed6863bfdc3d3
